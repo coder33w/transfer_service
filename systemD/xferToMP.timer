@@ -1,0 +1,9 @@
+[Unit]
+Description=Transfer Data to MP Daily at 0415 UTC
+
+[Timer]
+OnCalendar=*-*-* 4:15:00
+Unit=xferToMP.service
+
+[Install]
+WantedBy=default.target

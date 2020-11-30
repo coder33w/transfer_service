@@ -1,0 +1,10 @@
+[Unit]
+Description=Transfer Data from Sensors
+
+[Service]
+User=admin
+Group=admin
+ExecStart=/srv/scripts/xfer_fm_below.sh
+
+[Install]
+WantedBy=default.target

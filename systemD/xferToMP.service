@@ -1,0 +1,13 @@
+[Unit]
+Description=Transfer Data to MP
+Requires=xferCleanup.service
+Before=xferCleanup.service
+After=xferFmSnsrs.service
+
+[Service]
+User=transag
+Group=transag
+ExecStart=/srv/scripts/xfer_up.sh
+
+[Install]
+WantedBy=default.target

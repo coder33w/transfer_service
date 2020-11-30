@@ -1,0 +1,9 @@
+[Unit]
+Description=Transfer Data from Sensors Daily at 0200 UTC
+
+[Timer]
+OnCalendar=*-*-* 2:00:00
+Unit=xferFmSnsrs.service
+
+[Install]
+WantedBy=default.target

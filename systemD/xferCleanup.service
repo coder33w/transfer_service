@@ -1,0 +1,10 @@
+[Unit]
+Description=Cleans Up Transferred Data
+After=xferToMP.service
+
+[Service]
+User=admin
+ExecStart=/srv/scripts/xfer_cleanup.sh
+
+[Install]
+WantedBy=default.target
